@@ -1,17 +1,11 @@
 #include "multiplyStrings.h"
 #include "substrConcat.h"
+#include "jumpGameTwo.h"
 
 int main(int argc, char** argv)
 {
-	vector<string> words;
-	words.push_back("test");
-	words.push_back("another");
-	
-	vector<int> nums = findSubstring("testanother", words); 
-
-	for(int i = 0; i < nums.size(); i++)
-		cout << nums[i] << endl;
-
+	vector<int> myNums = {2, 3, 1, 1, 4};
+	cout << jump(myNums) << endl;
 	return 0;
 }
 
